@@ -314,6 +314,7 @@ def set_peft_model_state_dict(
         PeftType.LN_TUNING,
         PeftType.BOFT,
         PeftType.VERA,
+        PeftType.SORA
     ):
         peft_model_state_dict = {}
         parameter_prefix = {
@@ -327,6 +328,7 @@ def set_peft_model_state_dict(
             PeftType.BOFT: "boft_",
             PeftType.LN_TUNING: "ln_tuning_",
             PeftType.VERA: "vera_lambda_",
+            PeftType.SORA: "lora_",
         }[config.peft_type]
         for k, v in state_dict.items():
             if parameter_prefix in k:
