@@ -69,7 +69,7 @@ class SoraModel(LoraModel):
         current_key,
     ):
         kwargs = {
-            "r": lora_config.init_r,
+            "r": lora_config.r,
             "lora_alpha": lora_config.lora_alpha,
             "lora_dropout": lora_config.lora_dropout,
             "fan_in_fan_out": lora_config.fan_in_fan_out,
