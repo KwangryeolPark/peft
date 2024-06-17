@@ -35,7 +35,7 @@ from .tuners import (
     LoraModel,
     MixedModel,
     OFTModel,
-    SoraModel.
+    SoraModel
 )
 from .utils import PeftType, _set_adapter, _set_trainable
 
